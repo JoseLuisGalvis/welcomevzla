@@ -23,7 +23,7 @@ function ocultarCarga() {
 // Mostrar carga inicial
 mostrarCarga();
 
-fetch(API_URL) // Realizamos la solicitud GET a la ruta de sitios
+fetch(API_BASE_URL) // Realizamos la solicitud GET a la ruta de sitios
   .then((res) => {
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
@@ -53,7 +53,7 @@ fetch(API_URL) // Realizamos la solicitud GET a la ruta de sitios
       card.addEventListener("click", () => {
         const id = card.getAttribute("data-id");
         // Hacemos una nueva solicitud para obtener los detalles del lugar
-        fetch(`http://localhost:3000/sitios/${id}`)
+        fetch(`${API_BASE_URL}/sitios/${id}`)
           .then((res) => res.json())
           .then((lugar) => {
             modalTitulo.textContent = lugar.nombre;
