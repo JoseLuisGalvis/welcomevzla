@@ -36,6 +36,69 @@
   object-fit: cover;
 }
 
+.text-warning {
+  color: yellow; /* Color para 'Venezuela' (amarillo) */
+}
+
+.letter:nth-child(4),
+.letter:nth-child(6) {
+  color: #007bff; /* Azul para la 'e' y 'u' */
+}
+
+.letter:nth-child(5) {
+  color: white; /* Blanco para la 'z' */
+}
+
+.letter:nth-child(7),
+.letter:nth-child(8),
+.letter:nth-child(9) {
+  color: red; /* Rojo para 'ela' */
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.letter {
+  display: inline-block;
+  animation: wave 1.5s ease-in-out infinite;
+}
+
+/* Delay en cada letra para que vayan una tras otra */
+.letter:nth-child(1) {
+  animation-delay: 0s;
+}
+.letter:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.letter:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.letter:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.letter:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.letter:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.letter:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.letter:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.letter:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
 .card {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out; /* Añadimos transiciones */
