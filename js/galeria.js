@@ -2,7 +2,7 @@
 const API_BASE_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:3000"
-    : "https://venezuela-api.onrender.com";
+    : "https://venezuela-api-khac.onrender.com";
 
 const galeriaContainer = document.getElementById("galeriaContainer");
 const modalTitulo = document.getElementById("modalTitulo");
