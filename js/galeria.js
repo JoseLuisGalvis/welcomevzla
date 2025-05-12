@@ -23,7 +23,7 @@ function ocultarCarga() {
 // Mostrar carga inicial
 mostrarCarga();
 
-fetch(API_BASE_URL) // Realizamos la solicitud GET a la ruta de sitios
+fetch(`${API_BASE_URL}/sitios`)
   .then((res) => {
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
