@@ -129,6 +129,8 @@ body.dark-mode .hero-overlay {
   color: #fff;
 }
 
-body.dark-mode .modal-content {
+body.dark-mode .modal-content,
+body.dark-mode .card-body {
   background-color: #424040 !important;
+  color: #fff !important;
 }
