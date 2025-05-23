@@ -128,3 +128,7 @@ body.dark-mode .bg-navy {
 body.dark-mode .hero-overlay {
   color: #fff;
 }
+
+body.dark-mode .modal-content {
+  background-color: #424040 !important;
+}
